@@ -32,11 +32,11 @@ const LoginPage = ({ handleLogin }) => {
 
   return (
     <>
-      <div className="h-screen flex justify-center items-center">
+      <div className="h-screen flex justify-center items-center bg-sky-950">
         <form
           onSubmit={handleSubmit}
           className="
-        flex flex-col items-center gap-5 p-10 shadow-2xl rounded-2xl"
+        flex flex-col items-center gap-5 p-10 shadow-2xl rounded-2xl bg-slate-200"
         >
           <h1 className="text-4xl font-bold">Login</h1>
           <p className="text-gray-700 text-sm">Enter Your Email / Password</p>
@@ -45,14 +45,14 @@ const LoginPage = ({ handleLogin }) => {
             value={email}
             type="text"
             placeholder="Email"
-            className="px-3 py-1 bg-gray-200 text-sm rounded-sm focus:outline-none"
+            className="px-3 py-1 text-sm rounded-lg focus:outline-none border border-sky-950"
           />
           <input
             onChange={handlePassword}
             value={password}
             type="password"
             placeholder="Password"
-            className="px-3 py-1 bg-gray-200 text-sm rounded-sm focus:outline-none"
+            className="px-3 py-1 text-sm rounded-lg focus:outline-none border border-sky-950"
           />
           <div className="text-center">
             {!hint ? (
