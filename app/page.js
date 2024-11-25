@@ -16,8 +16,8 @@ export default function Home() {
 
   return (
     <>
-      {!user ? <LoginPage handleLogin={handleLogin} /> : ""}
-      {user == "admin" ? <Admin /> : ""}
+      {!user && <LoginPage handleLogin={handleLogin} />}
+      {user == "admin" && <Admin /> }
     </>
   );
 }
