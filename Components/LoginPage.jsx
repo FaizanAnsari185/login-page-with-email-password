@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { FaRegEyeSlash } from "react-icons/fa";
+import { TbEyeClosed } from "react-icons/tb";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 
 const LoginPage = ({ handleLogin }) => {
@@ -38,19 +38,17 @@ const LoginPage = ({ handleLogin }) => {
       <div className="h-screen flex justify-center items-center bg-black">
         <form
           onSubmit={handleSubmit}
-          className="
-        flex flex-col items-center gap-5 p-10 shadow-2xl rounded-2xl text-white bg-black border-2 border-blue-500"
-        >
-          <h1 className="text-4xl font-bold text-blue-500">Login</h1>
+          className="flex flex-col items-center gap-5 p-10 shadow-2xl rounded-2xl text-white bg-black border-2 border-yellow-500">
+          <h1 className="text-4xl font-bold text-yellow-500">Login</h1>
           <p className="text-sm">Enter Your Email or Password</p>
           <input
             onChange={handleEmail}
             value={isEmail}
             type="text"
             placeholder="Email"
-            className="px-5 py-1 text-sm rounded-2xl bg-black focus:outline-none border-2 border-blue-500"
+            className="px-5 py-1 text-sm rounded-2xl bg-black focus:outline-none border-2 border-yellow-500"
           />
-          <div className="flex items-center px-3 py-1 text-sm rounded-2xl border-2 border-blue-500">
+          <div className="flex items-center px-3 py-1 text-sm rounded-2xl border-2 border-yellow-500">
             <input
               onChange={handlePassword}
               value={IsPassword}
@@ -59,14 +57,14 @@ const LoginPage = ({ handleLogin }) => {
               className="bg-black focus:outline-none"
             />
             <div onClick={handleEye} className="cursor-pointer text-white">
-              {eye ? <FaRegEyeSlash /> : <MdOutlineRemoveRedEye />}
+              {eye ? <TbEyeClosed /> : <MdOutlineRemoveRedEye />}
             </div>
           </div>
           <div className="text-center">
             {!hint ? (
               <p
                 onClick={handleHint}
-                className="hover:text-blue-500 underline cursor-pointer"
+                className="hover:text-yellow-500 underline cursor-pointer"
               >
                 Hint?
               </p>
@@ -76,7 +74,7 @@ const LoginPage = ({ handleLogin }) => {
               </p>
             )}
           </div>
-          <button className="border-blue-500 text-white bg-blue-500 text-xs py-2 px-8 rounded-2xl">
+          <button className="border-yellow-500 text-white bg-yellow-500 text-xs py-2 px-8 rounded-2xl">
             Login
           </button>
         </form>
