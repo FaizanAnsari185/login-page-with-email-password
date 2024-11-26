@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { TbEyeClosed } from "react-icons/tb";
+import { FaRegEyeSlash } from "react-icons/fa";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 
 const LoginPage = ({ handleLogin }) => {
@@ -59,7 +59,7 @@ const LoginPage = ({ handleLogin }) => {
               className="bg-black focus:outline-none"
             />
             <div onClick={handleEye} className="cursor-pointer text-white">
-              {eye ? <TbEyeClosed /> : <MdOutlineRemoveRedEye />}
+              {eye ? <FaRegEyeSlash /> : <MdOutlineRemoveRedEye />}
             </div>
           </div>
           <div className="text-center">

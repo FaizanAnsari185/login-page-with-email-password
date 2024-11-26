@@ -17,7 +17,7 @@ const Admin = () => {
         <div className="flex justify-center items-center gap-20 mt-32">
           <div className="p-24 bg-indigo-950 rounded-xl hover:scale-110 hover:-rotate-3 transition transform ease-in-out duration-500">
             <h1 className="bg-zinc-900 text-3xl p-8 rounded-2xl hover:rotate-3 hover:scale-110 transition transform ease-in-out duration-500">
-              WelcomeBack👍
+              Welcome Back👍
             </h1>
           </div>
           <div className="p-24 bg-red-950 rounded-xl hover:scale-110 hover:rotate-3 transition transform ease-in-out duration-500">
