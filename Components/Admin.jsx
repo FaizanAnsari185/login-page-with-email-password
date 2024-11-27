@@ -51,7 +51,7 @@ const Admin = () => {
           </h1>
         </div>
         <div className="h-full flex justify-between items-center px-10">
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 ml-52">
             <h1 className="uppercase text-7xl hover:translate-x-5 transition transform ease-in-out hover:text-yellow-500">
               lets go
             </h1>
